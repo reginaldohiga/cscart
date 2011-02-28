@@ -1,0 +1,36 @@
+PAGSEGURO CS-CART
+
+Faltam as seguintes tarefas:
+
+- Cálculo de frete
+
+- deve prever mensagens de aviso quando o peso dos produtos no
+carrinho for superior a 30kg ou quando o valor dos produtos no
+carrinho for superior a R$ 10.000,00.
+
+- deve prever o cálculo de frete via SEDEX e PAC e dar ao
+comprador a opção de escolher entre as opções.
+
+- deve prever a possibilidade de utilização de frete grátis.
+ 
+- se não for possível calcular o frete por conta de um CEP
+incorreto ou inexistente deve prever a possibilidade de se cobrar um
+valor fixo, estipulado pelo vendedor.
+
+- deve prever instruções de configuração de frete dentro da
+conta PagSeguro de acordo com a opção escolhida.
+
+- deve prever a possibilidade do vendedor desativar o cálculo
+de frete via PagSeguro em detrimento de utilizar uma forma própria
+para o cálculo de tal, entretanto é imprescindível que o módulo seja
+capaz de pegar o valor de frete gerado e enviar ao PagSeguro no campo
+apropriado do form.
+
+- sempre enviar os dados obrigatórios via form (em negrito obrigatórios):
+i.        item_frete_x
+j.        item_peso_x
+m.        cliente_num
+r.        encoding (encoding utilizado pela plataforma do vendedor)
+s.        extras (este campo deve ser utilizado para envio de
+descontos gerados na plataforma do vendedor)
+
