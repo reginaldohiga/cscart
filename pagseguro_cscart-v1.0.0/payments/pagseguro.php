@@ -27,7 +27,6 @@ $pgs->cliente(array(
 ));
 
 $pedido = array();
-
 foreach ($order_info['items'] as $item) {
     $pedido[] = array(
         'id'            => $item['item_id'],
@@ -43,6 +42,7 @@ $extra = array (
 );
 
 foreach($extra as $k => $v){
+    if(!$v) continue;
     $pedido[] = array(
         'id'            => $order_info['order_id'],
         'quantidade'    => 1,
