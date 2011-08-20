@@ -31,7 +31,7 @@ foreach ($order_info['items'] as $item) {
     $pedido[] = array(
         'id'            => $item['item_id'],
         'quantidade'    => $item['amount'],
-        'valor'         => $item['subtotal'],
+        'valor'         => $item['price'],
         'descricao'     => strip_tags($item['product']),
     );
 }
